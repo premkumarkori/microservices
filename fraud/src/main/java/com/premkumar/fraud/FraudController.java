@@ -1,5 +1,6 @@
 package com.premkumar.fraud;
 
+import com.premkumar.clients.fraud.FraudCheckResponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("api/v1/fraud-check")
+@RequestMapping("api/v1/fraud-check/")
 @AllArgsConstructor
 public class FraudController {
     private final FraudCheckService fraudCheckService;
